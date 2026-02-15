@@ -4,6 +4,7 @@
   },
   "imports": {
     "@std/path": "jsr:@std/path@^1.1.4",
+    "@std/streams": "jsr:@std/streams@^1.0.17",
     "commander": "npm:commander@^14.0.3",
     "content-disposition": "npm:content-disposition@^1.0.1"
   }

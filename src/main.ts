@@ -13,6 +13,7 @@ program
   .description("Download zone files")
   .requiredOption("-o --out <path>", "output directory")
   .option("-z, --zone <string...>", "TLD of zone (all if not given)", [])
+  .option("-d, --domains", "parse out unique domains only")
   .action((options) => download(options));
 
 program.parse();

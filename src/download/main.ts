@@ -10,6 +10,7 @@ import type { Options } from "./types.ts";
 export async function download(options: Options): Promise<void> {
   const outputDirectory = options.out;
   const selectedZones = [...new Set(options.zone)];
+  const domainsOnly = options.domains;
 
   const USERNAME = Deno.env.get("USERNAME");
   const PASSWORD = Deno.env.get("PASSWORD");
@@ -42,6 +43,6 @@ export async function download(options: Options): Promise<void> {
   await Deno.mkdir(outputDirectory, { recursive: true });
 
   for (const url of selectedURLs) {
-    await downloadFile(accessToken, url, outputDirectory);
+    await downloadFile(accessToken, url, outputDirectory, domainsOnly);
   }
 }

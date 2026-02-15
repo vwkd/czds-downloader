@@ -8,6 +8,7 @@ Download zone files from CZDS
 
 - streaming download
 - select multiple zones
+- parse out unique domains only
 
 
 
