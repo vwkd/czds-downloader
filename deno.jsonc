@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "run": "deno run -RWNE --env-file=.env src/main.ts"
+  },
+  "imports": {
+    "@std/path": "jsr:@std/path@^1.1.4",
+    "commander": "npm:commander@^14.0.3",
+    "content-disposition": "npm:content-disposition@^1.0.1"
+  }
+}
